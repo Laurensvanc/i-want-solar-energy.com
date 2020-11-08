@@ -229,6 +229,16 @@ body {
   margin: 16px;
 }
 
+#contact_articleList {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+#contact_articleList article {
+  margin: 16px;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -354,7 +364,7 @@ body {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1179px) {
   #euroTable tbody > tr > :nth-child(3) {
     display: none;
   }
@@ -368,10 +378,6 @@ body {
       "article article"
       "eu_table eu_table"
       "products products";
-  }
-
-  #eu_articleList {
-    flex-direction: row;
   }
 
   .productCard {
@@ -410,7 +416,7 @@ body {
   }
 }
 
-@media (max-width: 632px) {
+@media (max-width: 480px) {
   #euroTable tbody > tr > :nth-child(5) {
     display: none;
   }
@@ -471,8 +477,4 @@ body {
   #burgeritems > input:checked ~ .navbarItem {
     display: block;
   }
-}
-
-.hidden {
-  display: none;
 }
