@@ -26,6 +26,16 @@ body {
   font-size: 24px;
 }
 
+#navbar {
+  position: 0;
+  position: sticky;
+}
+
+#hamburgerIcon,
+#hamburgerLabel {
+  display: none;
+}
+
 #navbar ul {
   display: flex;
   justify-content: center;
@@ -47,10 +57,6 @@ body {
 }
 
 #navbar li a:hover {
-  background-color: #0000004d;
-}
-
-.active {
   background-color: #0000004d;
 }
 
@@ -86,8 +92,11 @@ body {
 
 #mainVideo {
   width: 100%;
-  display: flex;
   justify-content: center;
+}
+
+#mainVideo h1 {
+  font-size: 24px;
 }
 
 #mainVideo video {
@@ -98,21 +107,16 @@ body {
   border-width: 3px;
 }
 
-#indexLayout {
-  display: flex;
-}
-
-#productPage {
-  flex-shrink: 10;
-}
-
 #productPage h1 {
   font-size: 24px;
 }
 
 #reasonPage {
-  flex-grow: 5;
   padding: 16px;
+}
+
+#reasonPage h1 {
+  font-size: 24px;
 }
 
 #mainProducts {
@@ -130,25 +134,23 @@ body {
 
 .productCard article {
   margin: 16px;
-  flex-grow: 9;
   padding: 16px;
 }
 
 .productCard section {
   margin: 16px;
-  flex-grow: 1;
 }
 
-.productCard section img {
+.productCard > section > a > img {
   width: 256px;
 }
 
-.productCard section footer {
+.productCard > section > footer {
   background-color: navy;
   padding: 8px;
 }
 
-.productCard section footer a {
+.productCard > section > footer > a {
   color: white;
   text-decoration: none;
 }
@@ -161,13 +163,14 @@ body {
 }
 
 #cookie {
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
   position: fixed;
   bottom: 0px;
   right: 0px;
   background-color: #ffaa0080;
   color: #fff;
+  padding: 8px;
 }
 
 #contentGrid {
@@ -210,20 +213,6 @@ body {
 
 #gridItem6 {
   grid-area: six;
-}
-
-@media (max-width: 800px) {
-  #gridItem4 {
-    display: none;
-  }
-
-  #contentGrid {
-    grid-template-columns: auto auto;
-    grid-template-areas:
-      "one   two"
-      "three five"
-      "six   six";
-  }
 }
 
 #articleList {
@@ -289,9 +278,6 @@ body {
   color: white;
 }
 
-#mainTable {
-}
-
 #tableFooter {
   width: 100%;
   background-color: #213d23;
@@ -305,10 +291,13 @@ body {
 }
 
 #userForm {
-  background-color: rgb(189, 189, 189);
   padding: 16px;
   display: flex;
   flex-direction: column;
+}
+
+#userForm textarea {
+  resize: none;
 }
 
 #userForm fieldset > input[type="text"],
@@ -329,4 +318,161 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+#indexFlexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#indexFlexContainer > :nth-child(1) {
+  order: 1;
+}
+#indexFlexContainer > :nth-child(2) {
+  flex-shrink: 3;
+  order: 2;
+}
+#indexFlexContainer > :nth-child(3) {
+  order: 3;
+  float: right;
+}
+
+#howsolarFlexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#howsolarFlexContainer > :nth-child(1) {
+  order: 1;
+}
+
+#howsolarFlexContainer > :nth-child(2) {
+  order: 2;
+}
+
+#euroTable tbody > tr > :nth-child(2) {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #euroTable tbody > tr > :nth-child(3) {
+    display: none;
+  }
+
+  #euroTable tbody > tr > :nth-child(4) {
+    display: none;
+  }
+
+  #eusolar_grid {
+    grid-template-areas:
+      "article article"
+      "eu_table eu_table"
+      "products products";
+  }
+
+  #eu_articleList {
+    flex-direction: row;
+  }
+
+  .productCard {
+    flex-direction: row-reverse;
+  }
+
+  #articleList > :nth-child(3) {
+    display: none;
+  }
+
+  #mainProducts {
+    flex-direction: column-reverse;
+  }
+  #indexFlexContainer > :nth-child(1) {
+    order: 2;
+  }
+
+  #indexFlexContainer > :nth-child(2) {
+    order: 3;
+  }
+
+  #indexFlexContainer > :nth-child(3) {
+    order: 1;
+  }
+
+  #gridItem4 {
+    display: none;
+  }
+
+  #contentGrid {
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "one   two"
+      "three five"
+      "six   six";
+  }
+}
+
+@media (max-width: 632px) {
+  #euroTable tbody > tr > :nth-child(5) {
+    display: none;
+  }
+
+  #euroTable tbody > tr > :nth-child(6) {
+    display: none;
+  }
+
+  #articleList > :nth-child(3) {
+    display: block;
+  }
+
+  #articleList {
+    display: table-column;
+  }
+
+  #gridItem6 {
+    display: none;
+  }
+
+  #contentGrid {
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "five  five"
+      "three three"
+      "two   two"
+      "one   one";
+  }
+
+  #mainVideo {
+    display: none;
+  }
+
+  .productCard {
+    flex-direction: column;
+  }
+
+  #hamburgerLabel {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #burgeritems > li {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  #burgeritems > li {
+    display: none;
+  }
+
+  #burgeritems > input:checked ~ .navbarItem {
+    display: block;
+  }
+}
+
+.hidden {
+  display: none;
 }
