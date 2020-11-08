@@ -256,7 +256,7 @@ body {
   width: 100%;
 }
 
-.card button {
+.card a {
   border: none;
   outline: 0;
   padding: 12px;
@@ -268,7 +268,7 @@ body {
   font-size: 18px;
 }
 
-.card button:hover {
+.card a:hover {
   opacity: 0.7;
 }
 
