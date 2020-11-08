@@ -67,6 +67,10 @@ body {
   width: 80%;
 }
 
+#contactArticle {
+  grid-area: article;
+}
+
 #eusolar_grid {
   margin-left: 10%;
   margin-right: 10%;
