@@ -1,8 +1,30 @@
+/* Main styling components */
 body {
   font-family: "Segoe Ui";
   margin: 0;
 }
 
+.spaced {
+  letter-spacing: .2rem;
+}
+
+.line_height {
+  line-height: 2.5;
+}
+
+.word_spacing {
+  word-spacing: -.4ch;
+}
+
+.hidden {
+  visibility: hidden;;
+}
+
+.plain {
+  text-transform: none;
+}
+
+/* header */
 #mainHeader {
   display: flex;
   align-items: center;
@@ -26,17 +48,12 @@ body {
   font-size: 24px;
 }
 
-#navbar {
-  position: 0;
+/* Navigation */
+.navbar {
   position: sticky;
 }
 
-#hamburgerIcon,
-#hamburgerLabel {
-  display: none;
-}
-
-#navbar ul {
+.navbar ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -48,7 +65,7 @@ body {
   top: 0;
 }
 
-#navbar li a {
+.navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -56,10 +73,48 @@ body {
   text-decoration: none;
 }
 
-#navbar li a:hover {
+.navbar li a:hover {
   background-color: #0000004d;
 }
 
+#hamburgerLabel {
+  display: inline-block;
+  color: white;
+  background: #a02620;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+#burgeritems > li {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+
+#burgeritems > li {
+  display: none;
+}
+
+#burgeritems > input:checked ~ .navbarItem {
+  display: block;
+}
+
+#hamburgerIcon,
+#hamburgerLabel {
+  display: none;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+/* Content */
 #mainContent {
   margin-left: 10%;
   margin-right: 10%;
@@ -71,28 +126,7 @@ body {
   grid-area: article;
 }
 
-#eusolar_grid {
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 100%;
-  width: 80%;
-  display: grid;
-  grid-template-areas:
-    "article article"
-    "eu_table products";
-}
-
-.eu_article {
-  grid-area: article;
-}
-
-.eu_table {
-  grid-area: eu_table;
-}
-
-.eu_products {
-  grid-area: products;
-}
+/* Content items*/
 
 #mainVideo {
   width: 100%;
@@ -111,23 +145,7 @@ body {
   border-width: 3px;
 }
 
-#productPage h1 {
-  font-size: 24px;
-}
-
-#reasonPage {
-  padding: 16px;
-}
-
-#reasonPage h1 {
-  font-size: 24px;
-}
-
-#mainProducts {
-  display: flex;
-  flex-wrap: wrap;
-}
-
+/* product card */
 .productCard {
   display: flex;
   border-style: solid;
@@ -141,11 +159,11 @@ body {
   padding: 16px;
 }
 
-.productCard section {
+.productCard > section > figure {
   margin: 16px;
 }
 
-.productCard > section > a > img {
+.productCard > section > figure > a > img {
   width: 256px;
 }
 
@@ -159,24 +177,7 @@ body {
   text-decoration: none;
 }
 
-#copyrightFooter {
-  background-color: #213d23;
-  color: white;
-  padding: 14px 16px;
-  margin-top: 16px;
-}
-
-#cookie {
-  width: 150px;
-  height: 50px;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  background-color: #ffaa0080;
-  color: #fff;
-  padding: 8px;
-}
-
+/* grid */
 #contentGrid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -217,6 +218,64 @@ body {
 
 #gridItem6 {
   grid-area: six;
+}
+
+#eusolar_grid {
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-areas:
+    "article article"
+    "eu_table products";
+}
+
+.eu_article {
+  grid-area: article;
+}
+
+.eu_table {
+  grid-area: eu_table;
+}
+
+.eu_products {
+  grid-area: products;
+}
+
+#productPage h1 {
+  font-size: 24px;
+}
+
+.reasonPage {
+  padding: 16px;
+}
+
+.reasonPage h1 {
+  font-size: 24px;
+}
+
+#mainProducts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.copyrightFooter {
+  background-color: #213d23;
+  color: white;
+  padding: 14px 16px;
+  margin-top: 16px;
+}
+
+#cookie {
+  width: 150px;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: #ffaa0080;
+  color: #fff;
+  padding: 8px;
 }
 
 #articleList {
@@ -276,6 +335,22 @@ body {
   opacity: 0.7;
 }
 
+.link:active {
+  color: #003f7a;
+}
+
+.link:link {
+  color: #00ccff;
+}
+
+.link:visited {
+  color: #004974;
+}
+
+.link:hover {
+  color: #006eff;
+}
+
 #euroTable {
   border-collapse: collapse;
   margin-top: 14px;
@@ -291,6 +366,14 @@ body {
   background-color: #213d23;
   color: white;
 }
+
+#euroTable:first-child(even){background-color: #FF0;}
+
+
+#euroTable tr:nth-child(even){background-color: #CFF;}
+#euroTable tr:nth-child(odd){background-color: #FFF;}
+
+
 
 #tableFooter {
   width: 100%;
@@ -315,6 +398,16 @@ body {
 }
 
 #userForm fieldset > input[type="text"],
+#userForm fieldset > textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+#userForm fieldset > input[type="email"],
 #userForm fieldset > textarea {
   width: 100%;
   padding: 8px;
@@ -366,6 +459,11 @@ body {
 
 #euroTable tbody > tr > :nth-child(2) {
   display: none;
+}
+
+.sectionTitle::first-letter {
+  color: #213d23;
+  font-size: 110%;
 }
 
 @media (max-width: 1179px) {
@@ -452,33 +550,5 @@ body {
 
   #mainVideo {
     display: none;
-  }
-
-  .productCard {
-    flex-direction: column;
-  }
-
-  #hamburgerLabel {
-    display: inline-block;
-    color: white;
-    background: #a02620;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
-
-  #burgeritems > li {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-top: 1px solid #333;
-  }
-
-  #burgeritems > li {
-    display: none;
-  }
-
-  #burgeritems > input:checked ~ .navbarItem {
-    display: block;
   }
 }

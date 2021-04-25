@@ -1,163 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Advertisement for Solar energy panels" />
-    <meta name="keywords" content="HTML, CSS" />
-    <meta name="author" content="Laurens van Coeverden" />
-    <title>I Want Solar Energy.com</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="shortcut icon" href="images/logo.png" />
-  </head>
-  <body>
-    <header id="mainHeader">
-      <img src="images/logo.png" title="Logo" alt="Logo" />
-      <h1>InHolland solar energy</h1>
-      <h2>Make the world a better place</h2>
-    </header>
-    <nav id="navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Advertisement for smart Solar energy panels quick and easy, learn more about solar panels fast cheap start up" />
+  <meta name="keywords" content="HTML, CSS" />
+  <meta name="author" content="Laurens van Coeverden" />
+  <title>I Want Solar Energy.com</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="shortcut icon" href="images/logo.png" />
+</head>
+
+<body>
+  <header id="mainHeader">
+    <a href="#"><img src="images/logo.png" title="Logo" alt="Logo" /></a>
+    <h1>InHolland solar energy</h1>
+    <h2 class="spaced">Make the world a better place</h2>
+  </header>
+  <nav class="navbar">
+    <label class="hidden absolute" for="toggle">x</label>
+    <input class="hidden relative" id="toggle" type="checkbox">
+    <nav class="menu plain">
       <ul>
         <li><a class="navbarItem" href="howsolarworks.html">help</a></li>
         <li><a class="navbarItem" href="eusolar.html">europe</a></li>
         <li><a class="navbarItem" href="contact.html">contact</a></li>
       </ul>
     </nav>
-    <section id="mainContent">
-      <section id="indexFlexContainer">
-        <section id="mainVideo">
-          <h1>Video</h1>
-          <video controls loop autoplay="autoplay" muted>
-            <source
-              src="videos/How_Solar_Energy_Panels_Work.mp4"
-              type="video/mp4"
-            />
-            <p>Your browser does not support the video tag :(</p>
-          </video>
-        </section>
-        <section id="productPage">
-          <h1>Products</h1>
-          <section id="mainProducts">
-            <article class="productCard">
-              <article>
-                <h3>Victron SmartSolar MPPT 100-50 12V 24V</h3>
-                <p>
-                  Bij 12 Volt max 700Wp aan zonnepanelen Bij 24 Volt max 1.400Wp
-                  aan zonnepanelen Bluetooth en gratis "Victron connect" app
-                  voor tablet/smartphone. De laadregelaar kunt u eenvoudig met
-                  de gratis Victron Connect app uitlezen op een
-                  Tablet/Ipad/Iphone/Samsung of andere smartphone. Gratis
-                  updates voor de laadregelaar via de Victron Connect app. Geen
-                  aparte display nodig, om te zien wat er gebeurt.
-                </p>
-                <a
-                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/SCC110050210"
-                  >More information</a
-                >
-              </article>
-              <section>
-                <a
-                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/SCC110050210"
-                  ><img
-                    src="images/products/Victron-Energy-SmartSolar-MPPT-100-50-_laadregelaar-solar-charger.png"
-                    title="Victron SmartSolar MPPT 100-50 12V 24V"
-                    alt="Victron SmartSolar MPPT 100-50 12V 24V"
-                /></a>
-                <footer>
-                  <a
-                    href="https://www.ikwilzonneenergie.nl/WebRoot/StoreNL/Shops/61494231/59BA/3E70/D904/6269/74F3/0A0C/6D07/8A81/Victron-Energy-SmartSolar-MPPT-100-50-_laadregelaar-solar-charger.png"
-                    ><em>source</em></a
-                  >
-                </footer>
-              </section>
+  </nav>
+  <section id="mainContent">
+    <section id="indexFlexContainer">
+      <section id="mainVideo">
+        <h2 class="sectionTitle">Video</h2>
+        <video controls loop autoplay="autoplay" muted>
+          <source src="videos/How_Solar_Energy_Panels_Work.mp4" title="solarpanel video" type="video/mp4" />
+          <p>Your browser does not support the video tag :(</p>
+        </video>
+      </section>
+      <section id="productPage">
+        <h2 class="sectionTitle">Products</h2>
+        <section id="mainProducts">
+          <article class="productCard">
+            <article>
+              <h3>Victron SmartSolar MPPT 100-50 12V 24V</h3>
+              <p>
+                Bij 12 Volt max 700Wp aan zonnepanelen Bij 24 Volt max 1.400Wp
+                aan zonnepanelen Bluetooth en gratis "Victron connect" app
+                voor tablet/smartphone. De laadregelaar kunt u eenvoudig met
+                de gratis Victron Connect app uitlezen op een
+                Tablet/Ipad/Iphone/Samsung of andere smartphone. Gratis
+                updates voor de laadregelaar via de Victron Connect app. Geen
+                aparte display nodig, om te zien wat er gebeurt.
+              </p>
+              <a href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/SCC110050210"
+                class="link">More
+                information</a>
             </article>
-            <article class="productCard">
-              <article>
-                <h3>SMA Sunny Boy SB3.6 omvormer</h3>
-                <p>
-                  Type:SMA SB 3.6-1AV-41 Max. 5.500Wp aan zonnepanelen Mpp
-                  spanning: 130-500Volt DC Max uitgangsvermogen: 3.600W AC 2x
-                  MPP tracker 4 strings mogelijk Wifi en Webconnect Uitleesbaar
-                  met Ipad/tablet/smartphone of pc, overal ter Wereld waar een
-                  internet verbinding is.
-                </p>
+            <section>
+              <figure>
                 <a
-                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/%22SMA+Sunny+Boy+SB3.6%22"
-                  >More information</a
-                >
-              </article>
-              <section>
+                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/SCC110050210">
+                  <img src="images/products/Victron-Energy-SmartSolar-MPPT-100-50-_laadregelaar-solar-charger.png"
+                    title="Victron SmartSolar MPPT 100-50 12V 24V" alt="Victron SmartSolar MPPT 100-50 12V 24V" />
+                </a>
+                <figcaption><strong>Victron SmartSolar MPPT 100-50 12V 24V</strong></figcaption>
+              </figure>
+              <footer>
                 <a
-                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/%22SMA+Sunny+Boy+SB3.6%22"
-                  ><img
-                    src="images/products/SMA-SB30-SB50-omvormer_turning.png"
-                    title="SMA Sunny Boy SB3.6 omvormer"
-                    alt="SMA Sunny Boy SB3.6 omvormer"
-                /></a>
-                <footer>
-                  <a
-                    href="https://www.ikwilzonneenergie.nl/WebRoot/StoreNL/Shops/61494231/59CC/FDD6/78F8/AFD4/B750/0A0C/6D05/80CB/SMA-SB30-SB50-omvormer_turning_m.png"
-                    ><em>source</em></a
-                  >
-                </footer>
-              </section>
+                  href="https://www.ikwilzonneenergie.nl/WebRoot/StoreNL/Shops/61494231/59BA/3E70/D904/6269/74F3/0A0C/6D07/8A81/Victron-Energy-SmartSolar-MPPT-100-50-_laadregelaar-solar-charger.png"><em>source</em></a>
+              </footer>
+            </section>
+          </article>
+          <article class="productCard">
+            <article>
+              <h3>SMA Sunny Boy SB3.6 omvormer</h3>
+              <p>
+                Type:SMA SB 3.6-1AV-41 Max. 5.500Wp aan zonnepanelen Mpp
+                spanning: 130-500Volt DC Max uitgangsvermogen: 3.600W AC 2x
+                MPP tracker 4 strings mogelijk Wifi en Webconnect Uitleesbaar
+                met Ipad/tablet/smartphone of pc, overal ter Wereld waar een
+                internet verbinding is.
+              </p>
+              <a href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/%22SMA+Sunny+Boy+SB3.6%22"
+                class="link">More
+                information</a>
             </article>
-            <article class="productCard">
-              <article>
-                <h3>Victron Energy Multiplus 12V/3000W/120-16</h3>
-                <p>
-                  Multi-functioneel: 12 Volt pure sinus-omvormer naar 230V van
-                  3000W met een piek van 6000W 120 Ampere 12V 4 traps acculader
-                  16A doorgangsstroom AC Walstroom, aggregaat of uit de accu.
-                  Afmetingen: hoogte 362mm x breedte 258mm x diepte 218mm
-                  Gewicht: 19 kg
-                </p>
+            <section>
+              <figure>
                 <a
-                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/PMP122300001"
-                  >More information</a
-                >
-              </article>
-              <section>
+                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/%22SMA+Sunny+Boy+SB3.6%22"><img
+                    src="images/products/SMA-SB30-SB50-omvormer_turning.png" title="SMA Sunny Boy SB3.6 omvormer"
+                    alt="SMA Sunny Boy SB3.6 omvormer" /></a>
+                <figcaption><strong>SMA Sunny Boy SB3.6 omvormer</strong></figcaption>
+              </figure>
+              <footer>
                 <a
-                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/PMP122300001"
-                  ><img
+                  href="https://www.ikwilzonneenergie.nl/WebRoot/StoreNL/Shops/61494231/59CC/FDD6/78F8/AFD4/B750/0A0C/6D05/80CB/SMA-SB30-SB50-omvormer_turning_m.png"><em>source</em></a>
+              </footer>
+            </section>
+          </article>
+          <article class="productCard">
+            <article>
+              <h3>Victron Energy Multiplus 12V/3000W/120-16</h3>
+              <p>
+                Multi-functioneel: 12 Volt pure sinus-omvormer naar 230V van
+                3000W met een piek van 6000W 120 Ampere 12V 4 traps acculader
+                16A doorgangsstroom AC Walstroom, aggregaat of uit de accu.
+                Afmetingen: hoogte 362mm x breedte 258mm x diepte 218mm
+                Gewicht: 19 kg
+              </p>
+              <a href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/PMP122300001"
+                class="link">More
+                information</a>
+            </article>
+            <section>
+              <figure>
+                <a
+                  href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/PMP122300001"><img
                     src="images/products/Victron-Energy-MultiPlus-12V-3000W-120-50.jpg"
                     title="Victron Energy Multiplus 12V/3000W/120-16"
-                    alt="Victron Energy Multiplus 12V/3000W/120-16"
-                /></a>
-                <footer>
-                  <a
-                    href="https://www.ikwilzonneenergie.nl/WebRoot/StoreNL/Shops/61494231/5E00/F971/B68B/3B93/B0F6/0A0C/6D0C/F193/Victron-Energy-MultiPlus-12V-3000W-120-50_m.jpg"
-                    ><em>source</em></a
-                  >
-                </footer>
-              </section>
-            </article>
-          </section>
-        </section>
-        <section id="reasonPage">
-          <h1>5 reasons why we recommend solar power</h1>
-          <article>
-            <p>1. Solar is Easy</p>
-            <p>2. Solar is Flexible</p>
-            <p>3. Solar is Independent</p>
-            <p>4. Solar is Environmentally Sound</p>
-            <p>5. Solar is Affordable</p>
+                    alt="Victron Energy Multiplus 12V/3000W/120-16" /></a>
+                <figcaption><strong>Victron Energy Multiplus 12V/3000W/120-16</strong></figcaption>
+
+              </figure>
+              <footer>
+                <a
+                  href="https://www.ikwilzonneenergie.nl/WebRoot/StoreNL/Shops/61494231/5E00/F971/B68B/3B93/B0F6/0A0C/6D0C/F193/Victron-Energy-MultiPlus-12V-3000W-120-50_m.jpg"><em>source</em></a>
+              </footer>
+            </section>
+
           </article>
-          <p>
-            <em
-              ><a
-                href="https://www.ways2gogreenblog.com/2013/12/13/the-top-5-reasons-why-you-should-turn-to-solar-energy/"
-                >Credits</a
-              ></em
-            >
-          </p>
         </section>
       </section>
+      <section class="reasonPage line_height">
+        <h2 class="sectionTitle">5 reasons why we recommend solar power</h2>
+        <article>
+          <ol>
+            <li>Solar is Easy</li>
+            <li>Solar is Flexible</li>
+            <li>Solar is Independent</li>
+            <li>Solar is Environmentally Sound</li>
+            <li>Solar is Affordable</li>
+          </ol>
+        </article>
+        <p>
+          <em><a
+              href="https://www.ways2gogreenblog.com/2013/12/13/the-top-5-reasons-why-you-should-turn-to-solar-energy/">Credits</a></em>
+        </p>
+      </section>
     </section>
-    <footer id="copyrightFooter">
-      &copy; Copyright 2020 Laurens van Coeverden
-    </footer>
+  </section>
+  <footer class="copyrightFooter word_spacing">
+    &copy; Copyright-2020 / Laurens van Coeverden
     <section id="cookie">May I take your cookie? 🍪</section>
-  </body>
+  </footer>
+</body>
+
 </html>
